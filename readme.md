@@ -9,5 +9,5 @@ cd my-app
 
 composer require rabeea/laravel-starter
 
-php artisan start:install
+php artisan start
 ```
