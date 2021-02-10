@@ -1,0 +1,41 @@
+{
+    "name": "rabeea/laravel-starter",
+    "description": "A nice starter for Laravel project",
+    "authors": [
+        {
+            "name": "Rabeea",
+            "email": "rabieali520@gmail.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "auth",
+        "laravel-starter"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/filesystem": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Starter\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Starter\\MainServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
