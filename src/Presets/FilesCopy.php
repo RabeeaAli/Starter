@@ -30,13 +30,13 @@ class FilesCopy
 
     public static function controllers()
     {
-        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/App/Http/Controllers/Frontend', app_path('Http/Controllers/Frontend'));
-        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/App/Http/Controllers/Backend', app_path('Http/Controllers/Backend'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/app/Http/Controllers/Frontend', app_path('Http/Controllers/Frontend'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/app/Http/Controllers/Backend', app_path('Http/Controllers/Backend'));
     }
 
     public static function requests()
     {
-        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/App/Http/Requests/Auth', app_path('Http/Requests/Auth'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/app/Http/Requests/Auth', app_path('Http/Requests/Auth'));
     }
 
     public static function resources()
@@ -57,22 +57,22 @@ class FilesCopy
 
     public static function providers()
     {
-        copy(__DIR__ . '/../../stubs/App/Providers/RouteServiceProvider.php', app_path('Providers/RouteServiceProvider.php'));
+        copy(__DIR__ . '/../../stubs/app/Providers/RouteServiceProvider.php', app_path('Providers/RouteServiceProvider.php'));
     }
 
     public static function middleware()
     {
-        copy(__DIR__ . '/../../stubs/App/Http/Middleware/admin.php', app_path('Http/Middleware/admin.php'));
+        copy(__DIR__ . '/../../stubs/app/Http/Middleware/admin.php', app_path('Http/Middleware/admin.php'));
     }
 
     public static function models()
     {
-        copy(__DIR__ . '/../../stubs/App/Models/User.php', app_path('Models/User.php'));
+        copy(__DIR__ . '/../../stubs/app/Models/User.php', app_path('Models/User.php'));
     }
 
     public static function viewComponents()
     {
-        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/App/View/Components', app_path('View/Components'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/app/View/Components', app_path('View/Components'));
     }
 
     public static function migrations()
@@ -82,7 +82,7 @@ class FilesCopy
 
     public static function updateKernel()
     {
-        copy(__DIR__ . '/../../stubs/App/Http/Kernel.php', app_path('Http/Kernel.php'));
+        copy(__DIR__ . '/../../stubs/app/Http/Kernel.php', app_path('Http/Kernel.php'));
     }
 
     public static function tailwindAndWebpack()
