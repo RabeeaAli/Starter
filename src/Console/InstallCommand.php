@@ -32,17 +32,9 @@ class InstallCommand extends Command
         NpmPackages::install();
         FilesCopy::install();
 
-        // $this->info('Package scaffolding installed successfully.');
-
-        // $this->line('Display this on the screen');
-
-        // shell_exec('npm install && npm run dev');
-
-        // $this->info('Done');
-
-        // if ($this->confirm('Do you want to remove the package?')) {
-        //     shell_exec('composer remove ');
-        // }
+        if ($this->confirm('Do you want to remove the package? Choose yes')) {
+            shell_exec('composer remove rabeea/laravel-starter');
+        }
 
         $this->info('All scaffolding installed successfully.');
         $this->comment('Please execute the "npm install && npm run dev" command to build your assets.');
