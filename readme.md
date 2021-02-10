@@ -1,6 +1,6 @@
 ## Introduction
 
-This is a start project of laravel with Tailwind & Laravel Breeze auth & with simple admin pandel.
+This is a start project of laravel with Tailwind & Laravel Breeze auth & with simple admin panel.
 
 ```bash
 laravel new my-app
