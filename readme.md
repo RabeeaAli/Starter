@@ -10,4 +10,6 @@ cd my-app
 composer require rabeea/laravel-starter
 
 php artisan start
+
+npm install && npm run dev
 ```
