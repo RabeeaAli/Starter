@@ -2,9 +2,9 @@
 
 namespace Starter\Console;
 
+use Starter\Presets\FilesCopy;
 use Illuminate\Console\Command;
-use RabeeaAli\LaravelStarter\Presets\FilesCopy;
-use RabeeaAli\LaravelStarter\Presets\NpmPackages;
+use Starter\Presets\NpmPackages;
 
 class InstallCommand extends Command
 {
